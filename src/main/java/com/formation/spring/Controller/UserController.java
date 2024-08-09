@@ -1,12 +1,10 @@
 package com.formation.spring.Controller;
 
-import com.fasterxml.jackson.databind.util.BeanUtil;
 import com.formation.spring.Entities.UserEntity;
 import com.formation.spring.Repository.UserRepository;
 import com.formation.spring.Request.UserRequest;
 import com.formation.spring.Responses.UserResponse;
 import com.formation.spring.Services.UserService;
-import com.formation.spring.Shared.Dto.UserDto;
 import com.formation.spring.Shared.Utils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +19,15 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
     @Autowired
+    BCryptPasswordEncoder bCryptPasswordEncoder;
+    @Autowired
     Utils utils;
     @GetMapping
     public String getUser(){
         return "function get user called";
     }
     @PostMapping
+    @CrossOrigin
     public UserResponse createUser(@RequestBody UserRequest userRequest){
 
         UserEntity userEntity = new UserEntity();
@@ -36,14 +37,14 @@ public class UserController {
         //if(checkUser != null) throw new RuntimeException("User already exists");
       //  UserDto createUser = userService.createUser(userDto);
         userEntity.setUserId(utils.generateStringId(30));
-        userEntity.setEncrybtPassword("sdffdsfdfd");
+        userEntity.setEncrybtPassword(bCryptPasswordEncoder.encode(userRequest.getPassword()));
         UserEntity newUser = userRepository.save(userEntity);
 
 
         UserResponse userResponse = new UserResponse();
-        BeanUtils.copyProperties(userEntity, userResponse);
+        BeanUtils.copyProperties(newUser, userResponse);
 
-
+      //  return "qsfsdsfdqsdqsd";
 
         return userResponse;
     }

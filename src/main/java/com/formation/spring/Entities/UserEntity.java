@@ -1,9 +1,9 @@
 package com.formation.spring.Entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import java.io.Serializable;
 
@@ -20,7 +20,7 @@ public class UserEntity implements Serializable {
     private String lastName;
     @Column(nullable = false, length = 100, unique = true)
     private String email;
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 255)
     private String encrybtPassword;
     @Column(nullable = true)
     private String emailVerificationToken;

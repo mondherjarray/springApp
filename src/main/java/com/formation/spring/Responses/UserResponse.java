@@ -5,7 +5,7 @@ public class UserResponse {
     private String firstName;
     private String lastName;
     private String email;
-    private String password;
+
 
     public String getUserId() {
         return userId;
@@ -39,11 +39,4 @@ public class UserResponse {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
