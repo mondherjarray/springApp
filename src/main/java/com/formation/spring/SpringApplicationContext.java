@@ -14,7 +14,6 @@ public class SpringApplicationContext implements ApplicationContextAware {
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         // TODO Auto-generated method stub
         CONTEXT = applicationContext;
-        System.out.println("ApplicationContext has been set!");
     }
 
     public static Object getBean(String beanName) {

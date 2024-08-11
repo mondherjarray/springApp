@@ -19,7 +19,15 @@ public class UserServiceImpl implements UserService {
     UserRepository userRepository;
     @Override
     public UserDto createUser(UserDto userDto) {
-        return null;
+       UserEntity userEntity = new UserEntity();
+
+       BeanUtils.copyProperties(userDto, userEntity);
+       UserEntity createUser=userRepository.save(userEntity);
+
+        UserDto user = new UserDto();
+        BeanUtils.copyProperties(createUser, user);
+
+        return user;
     }
 
     @Override
@@ -46,4 +54,41 @@ public class UserServiceImpl implements UserService {
 
         return userDto;
     }
+
+    @Override
+    public UserDto getUserByUserId(String userId) {
+        UserEntity userEntity = userRepository.findByUserId(userId);
+        if(userEntity == null) throw new UsernameNotFoundException(userId);
+        UserDto userDto = new UserDto();
+        BeanUtils.copyProperties(userEntity, userDto);
+
+        return userDto;
+    }
+
+    @Override
+    public UserDto updateUser(String userId, UserDto userDto) {
+        UserEntity userEntity = userRepository.findByUserId(userId);
+        if(userEntity == null) throw new UsernameNotFoundException(userId);
+
+        userEntity.setFirstName(userDto.getFirstName());
+        userEntity.setLastName(userDto.getLastName());
+
+        UserEntity userUpdate = userRepository.save(userEntity);
+
+        UserDto user = new UserDto();
+        BeanUtils.copyProperties(userUpdate, user);
+
+        return user;
+
+    }
+
+    @Override
+    public void deleteUser(String id) {
+        UserEntity userEntity = userRepository.findByUserId(id);
+        if(userEntity == null) throw new UsernameNotFoundException(id);
+
+        userRepository.delete(userEntity);
+    }
+
+
 }

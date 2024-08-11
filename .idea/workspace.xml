@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0226c3fb-6a00-4010-bdfb-2968193ed3f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Request/UserLoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/AuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/SecurityConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/WebSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/SpringApplicationContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Entities/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Responses/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Responses/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Services/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Services/Impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Shared/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Shared/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/SpringApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/SpringApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
