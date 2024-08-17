@@ -1,6 +1,7 @@
 package com.formation.spring.Security;
 
 import com.formation.spring.Services.UserService;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,6 +9,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
+
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
 
@@ -44,7 +49,18 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         filter.setFilterProcessesUrl("/users/login");
         return filter;
     }
+    @Bean
+    public CorsFilter corsFilter() {
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+        config.setAllowCredentials(true);
+        config.addAllowedOrigin("http://localhost:4200"); // Allow Angular frontend origin
+        config.addAllowedHeader("*");  // Allow any header
+        config.addAllowedMethod("*");  // Allow any method (GET, POST, etc.)
 
+        source.registerCorsConfiguration("/**", config);
+        return new CorsFilter(source);
+    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
