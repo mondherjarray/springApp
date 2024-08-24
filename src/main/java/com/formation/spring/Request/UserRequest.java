@@ -5,6 +5,15 @@ public class UserRequest {
     private String lastName;
     private String email;
     private String password;
+    private Boolean admin;
+
+    public Boolean getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Boolean admin) {
+        this.admin = admin;
+    }
 
     public String getFirstName() {
         return firstName;

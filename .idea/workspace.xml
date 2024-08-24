@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0226c3fb-6a00-4010-bdfb-2968193ed3f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Controller/AdressesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Entities/AdresseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Repository/AdresseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Request/AdresseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Responses/AdresseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Services/AdresseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Services/Impl/AdresseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Shared/Dto/AdresseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/WebSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Entities/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Request/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Request/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Responses/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Responses/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Security/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/formation/spring/Shared/Dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/formation/spring/Shared/Dto/UserDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,30 +82,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.sp.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.spring [:Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [site].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.spring [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/setup/ISIMED/Spring/spring/formtion_spring/springApp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;promo.profiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.sp.executor": "Run",
+    "Gradle.spring [:Application.main()].executor": "Run",
+    "Maven.spring [clean].executor": "Run",
+    "Maven.spring [compile].executor": "Run",
+    "Maven.spring [install].executor": "Run",
+    "Maven.spring [org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean].executor": "Run",
+    "Maven.spring [package].executor": "Run",
+    "Maven.spring [site].executor": "Run",
+    "Maven.spring [validate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ASUS/Desktop/setup/ISIMED/Spring/spring/formtion_spring/springApp",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "promo.profiler"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn package" />

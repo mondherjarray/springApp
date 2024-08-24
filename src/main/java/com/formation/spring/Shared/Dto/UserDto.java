@@ -14,6 +14,15 @@ public class UserDto implements Serializable {
     private String emailVerificationToken;
     private Boolean emailVerficationStatus;
 
+    public Boolean getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Boolean admin) {
+        this.admin = admin;
+    }
+
+    private Boolean admin;
     public long getId() {
         return id;
     }

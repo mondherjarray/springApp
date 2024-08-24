@@ -4,7 +4,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
 import java.io.Serializable;
 
 @Entity(name="users")
@@ -24,6 +23,16 @@ public class UserEntity implements Serializable {
     private String encrybtPassword;
     @Column(nullable = true)
     private String emailVerificationToken;
+    @Column(nullable = false )
+    private Boolean admin =false;
+
+    public Boolean getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Boolean admin) {
+        this.admin = admin;
+    }
 
     private Boolean emailVerficationStatus = false;
 
